@@ -1,5 +1,5 @@
 {
-  "name": "ajax-project",
+  "name": "challenges",
   "image": "thebearingedge/code-container",
   "mounts": [
     // get access to the host docker daemon
