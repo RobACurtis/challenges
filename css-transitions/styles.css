@@ -1,0 +1,58 @@
+body{
+  width: 800px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  animation-name: smile;
+  animation-duration: 4s;
+}
+
+.dot1 {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.dot2 {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.dot3 {
+position:absolute;
+left:31%;
+width:40%;
+height:35%;
+background-color:rgba(255, 255, 0, 0);
+border-radius:100%;
+border-bottom:solid 5px #000;
+bottom:10px;
+}
+
+@keyframes smile {
+  0% {top: 50px; background: yellow;}
+  25% {top: -300px; background-color: green;}
+  75% {top: 300px;}
+  100% {top: -100px; background-color: yellow;}
+}
