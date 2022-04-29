@@ -1,0 +1,108 @@
+
+html {
+  background-image: url('paper.jpg');
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#input {
+  display:flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+}
+
+#add-input {
+  margin: 10px;
+  margin-right: 0px;
+  border-radius: 20px;
+  border-style:ridge;
+  color: black;
+  padding: 10px;
+  font-size: medium;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.103);
+
+}
+
+.button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.103);;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif, bold;
+  color: black;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+
+}
+#todos-ul{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap:inherit;
+  justify-content: center;
+  align-items: center;
+  list-style-type:none;
+  margin: 25px;
+  padding: 50px;
+}
+li {
+  font-size: 20px;
+}
+
+.li:hover {
+  cursor: pointer;
+}
+
+[contenteditable="true"]:focus {
+    outline: 0px solid transparent;
+}
+
+[contenteditable="true"]:hover {
+  opacity: .9;
+}
+
+
+ @media screen and (max-width:600px) {
+  h1 {
+    font-size: 15vw;
+  }
+
+  input {
+    width: 50vw;
+    height: 10vw;
+  }
+  .button {
+    height: 13vw;
+    width: 13vw;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  .liButton {
+    height: 7vw;
+    width: 10vw;
+    font-size: 10px;
+  }
+}
