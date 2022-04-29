@@ -1,0 +1,73 @@
+body{
+  width: 800px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.center:before {
+  content: 'HELLO WORLD';
+   position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0%{color:black; background-color: red; top:0px}
+  50%{color: red; background-color: blue; top: 340px; content: 'Do You Want to See Some CSS?';}
+  75%{color:black; background-color: green; top: -300px; content: 'Animations?';}
+  100%{color: blue; background-color: red; top:0px; counter: 'HElLO WORLD!'}
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  animation-name: smile;
+  animation-duration: 1.5s;
+}
+
+.dot1 {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.dot2 {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.dot3 {
+  position: absolute;
+  top: 75px;
+  left: 38px;
+  width: 80px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+@keyframes smile {
+  0% {top: 50px; left:0;}
+  25% {top: -300px; left: 200px; background-color: green;}
+  75% {top: 600px; left: 0px;}
+  100% {top: 50px; left: -200px; background-color: greenyellow;}
+}
