@@ -1,0 +1,71 @@
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+img {
+  height: 500px;
+  width: 800px;
+  margin: 35px 40px;
+  object-fit: cover;
+  box-shadow: 4px 4px 2px rgb(218, 218, 218);
+}
+
+.container {
+  width: 600px;
+  height: 100vh;
+  margin: auto;
+}
+
+.margin-top {
+  margin-top: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-circle {
+  font-size: 15px;
+  margin: 4px;
+  position: relative;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+.fall-left {
+ position: relative;
+ animation-name: slide-left;
+ animation-duration: 1s;
+}
+
+@keyframes slide-left {
+ from{right: 0px; opacity: 100%;}
+ to{right: 100px; opacity: 0;}
+}
+
+.fall-right {
+position: relative;
+ animation-name: slide-right;
+ animation-duration: 1s;
+}
+@keyframes slide-right {
+ from{left: 100px;}
+ to{left: 0px;}
+}
