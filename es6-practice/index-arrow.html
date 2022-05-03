@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>es6 practice</title>
+</head>
+<body>
+  <script>
+    const arr = (x, y) => x + y;
+    const obj = {
+      prop1: function(event) {
+        console.log(this);
+        setTimeout(() => {
+          let i = 0;
+          while (i <= 5) {
+          console.log('hello world', i);
+          console.log(this);
+          i++;
+          }
+        }, 3000);
+      }
+    }
+    let array = [0,10,20,30];
+    console.log(array);
+    array = 'hi';
+    console.log(array);
+
+  </script>
+</body>
+</html>
