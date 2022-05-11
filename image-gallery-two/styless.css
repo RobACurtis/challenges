@@ -1,18 +1,16 @@
-img {
-  /* width: 300px; */
-  height: 200px;
+
+/* .grid-item {
+  height: 300px;
+  width: 400px;
   object-fit: cover;
-}
-.container {
-  width: 800px;
-  margin: auto;
+} */
+
+.grid-item {
+  /* float: left; */
+  height: 200px;
+  max-width: 400px;
+  /* height: 200px; */
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column-full {
-  flex-basis: 100%;
-}
+/* .grid-item--width2 { width: 660px; }
+.grid-item--height2 { height: 340px; } */
