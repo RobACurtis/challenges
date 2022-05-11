@@ -1,5 +1,5 @@
 .container {
-  width: 200px;
+  width: 400px;
   margin: auto;
 }
 
@@ -11,12 +11,41 @@
 .column{
   flex-basis: 100%;
 }
-.grid-item--width2 { width: 400px; }
-.grid-item--height2 { height: 225px; width: 133px; }
+.column-full {
+  display: none;
+}
+
+.grid-item--width2 {
+ margin-top: 4px;
+  width: 400px;
+}
+.grid-item--height2 {
+  height: 225px;
+  width: 133px;
+}
 
 @media screen and (min-width: 600px) {
   .container {
-    width: 600px;
+    width: 680px;
     margin: auto;
   }
+  .column-full {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  .column{
+    display: none;
+  }
+  .grid-item--width2 {
+    margin: 5px;
+  width: 320px;
+  object-fit: cover ;
+}
+.grid-item--height2 {
+  margin: 5px 0 5px 0;
+  height: 250px;
+  width: 160px;
+  object-fit: cover;
+}
 }
