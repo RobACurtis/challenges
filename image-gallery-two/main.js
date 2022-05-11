@@ -1,11 +1,17 @@
 const $div = document.querySelector('.column');
 const $divL = document.querySelector('.column-full');
 const arr = ['/900x1600/?surfing',
-             '/1600x900/?surfing', '/1600x900/?sports',
+  '/1600x900/?surfing', '/1600x900/?sports',
              '/900x1600/?exercise', '/1600x900/?happy',
              '/900x1600/?love', '/1600x900/?joy', '/900x1600/?weather',
              '/900x1600/?mountains', '/1600x900/?skateboard', '/900x1600/?kids',
-             '/1600x900/?snow', '/1600x900/?work'];
+             '/1600x900/?snow', '/1600x900/?work',
+              '/900x1600/?happy', '/1600x900/?grass', '/900x1600/?rain',
+              '/900x1600/?boat', '/1600x900/?landscape', '/900x1600/?donuts',
+              '/1600x900/?lake', '/1600x900/?office',
+              '/900x1600/?clothes', '/900x1600/?running',
+               '/900x1600/?walking', '/900x1600/?california', '/900x1600/?florida'
+];
 const landscape = [];
 const portrait = [];
 const portraitClone = [];
@@ -39,11 +45,15 @@ function orderImages () {
 for (var i = 0; i < landscape.length; i++) {
     images.push(landscape[i]);
   }
+  let order = 3;
+  let index = 2;
   for (i = 0; i < portrait.length; i++) {
-    if(i < 3) {
-    images.splice(2, 0, portrait[i]);
+    if(i < order) {
+    images.splice(index, 0, portrait[i]);
   } else {
-    images.splice(7, 0, portrait[i]);
+      order += 3;
+      index += 5;
+      images.splice(index, 0, portrait[i]);
   }
 }
   for (var i = 0; i < images.length; i++) {
@@ -56,13 +66,15 @@ function clonedDiv() {
   for (var i = 0; i < landscapeClone.length; i++) {
     imagesClone.push(landscapeClone[i]);
   }
-
   let y = 0;
   for (i = 0; i < portraitClone.length; i++) {
+
     imagesClone.splice(y, 0, portraitClone[i]);
-    if (i % 2 === 0) {
+    if (i + 4 === portraitClone.length) {
+      y = imagesClone.length - 2;
+    } else if (i % 2 === 0) {
       y+=2;
-    } else {
+    }  else {
       y+=1
     }
   }
