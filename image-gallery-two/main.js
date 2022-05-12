@@ -14,10 +14,10 @@ const arr = ['/900x1600/?surfing',
 ];
 const landscape = [];
 const portrait = [];
-const portraitClone = [];
-const landscapeClone = [];
+// const portraitClone = [];
+// const landscapeClone = [];
 const images = [];
-const imagesClone = [];
+// const imagesClone = [];
 
 
 function newImage() {
@@ -28,11 +28,11 @@ img.onload = function () {
       if (this.width > this.height) {
         img.className = 'grid-item grid-item--width2';
         landscape.push(img);
-        landscapeClone.push(img.cloneNode(true))
+        // landscapeClone.push(img.cloneNode(true))
       } else {
         img.className = 'grid-item grid-item--height2';
         portrait.push(img)
-        portraitClone.push(img.cloneNode(true))
+        // portraitClone.push(img.cloneNode(true))
       }
     }
   }
@@ -59,28 +59,28 @@ for (var i = 0; i < landscape.length; i++) {
   for (var i = 0; i < images.length; i++) {
     $div.appendChild(images[i])
     }
-clonedDiv();
+// clonedDiv();
 }
 
-function clonedDiv() {
-  for (var i = 0; i < landscapeClone.length; i++) {
-    imagesClone.push(landscapeClone[i]);
-  }
-  let y = 0;
-  for (i = 0; i < portraitClone.length; i++) {
+// function clonedDiv() {
+//   for (var i = 0; i < landscapeClone.length; i++) {
+//     imagesClone.push(landscapeClone[i]);
+//   }
+//   let y = 0;
+//   for (i = 0; i < portraitClone.length; i++) {
 
-    imagesClone.splice(y, 0, portraitClone[i]);
-    if (i + 4 === portraitClone.length) {
-      y = imagesClone.length - 2;
-    } else if (i % 2 === 0) {
-      y+=2;
-    }  else {
-      y+=1
-    }
-  }
-  for (var i = 0; i < imagesClone.length; i++) {
-    $divL.appendChild(imagesClone[i]);
-  }
-}
+//     imagesClone.splice(y, 0, portraitClone[i]);
+//     if (i + 4 === portraitClone.length) {
+//       y = imagesClone.length - 2;
+//     } else if (i % 2 === 0) {
+//       y+=2;
+//     }  else {
+//       y+=1
+//     }
+//   }
+//   for (var i = 0; i < imagesClone.length; i++) {
+//     $divL.appendChild(imagesClone[i]);
+//   }
+// }
 
 window.addEventListener('load', orderImages);
