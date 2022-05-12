@@ -27,11 +27,13 @@ function newImage() {
 img.onload = function () {
       if (this.width > this.height) {
         img.className = 'grid-item grid-item--width2';
-        landscape.push(img);
+        $div.appendChild(img);
+        // landscape.push(img);
         // landscapeClone.push(img.cloneNode(true))
       } else {
         img.className = 'grid-item grid-item--height2';
-        portrait.push(img)
+        // portrait.push(img)
+        $div.appendChild(img)
         // portraitClone.push(img.cloneNode(true))
       }
     }
@@ -41,26 +43,26 @@ img.onload = function () {
 newImage();
 
 
-function orderImages () {
-for (var i = 0; i < landscape.length; i++) {
-    images.push(landscape[i]);
-  }
-  let order = 3;
-  let index = 2;
-  for (i = 0; i < portrait.length; i++) {
-    if(i < order) {
-    images.splice(index, 0, portrait[i]);
-  } else {
-      order += 3;
-      index += 5;
-      images.splice(index, 0, portrait[i]);
-  }
-}
-  for (var i = 0; i < images.length; i++) {
-    $div.appendChild(images[i])
-    }
-// clonedDiv();
-}
+// function orderImages () {
+// for (var i = 0; i < landscape.length; i++) {
+//     images.push(landscape[i]);
+//   }
+//   let order = 3;
+//   let index = 2;
+//   for (i = 0; i < portrait.length; i++) {
+//     if(i < order) {
+//     images.splice(index, 0, portrait[i]);
+//   } else {
+//       order += 3;
+//       index += 5;
+//       images.splice(index, 0, portrait[i]);
+//   }
+// }
+//   for (var i = 0; i < images.length; i++) {
+//     $div.appendChild(images[i])
+//     }
+// // clonedDiv();
+// }
 
 // function clonedDiv() {
 //   for (var i = 0; i < landscapeClone.length; i++) {
