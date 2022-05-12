@@ -14,10 +14,7 @@ const arr = ['/900x1600/?surfing',
 ];
 const landscape = [];
 const portrait = [];
-// const portraitClone = [];
-// const landscapeClone = [];
 const images = [];
-// const imagesClone = [];
 
 
 function newImage() {
@@ -26,15 +23,11 @@ function newImage() {
     img.src = 'https://source.unsplash.com' + arr[i];
 img.onload = function () {
       if (this.width > this.height) {
-        img.className = 'grid-item grid-item--width2';
+        img.className = 'landscape';
         $div.appendChild(img);
-        // landscape.push(img);
-        // landscapeClone.push(img.cloneNode(true))
       } else {
-        img.className = 'grid-item grid-item--height2';
-        // portrait.push(img)
+        img.className = 'portrait';
         $div.appendChild(img)
-        // portraitClone.push(img.cloneNode(true))
       }
     }
   }
@@ -42,47 +35,5 @@ img.onload = function () {
 
 newImage();
 
-
-// function orderImages () {
-// for (var i = 0; i < landscape.length; i++) {
-//     images.push(landscape[i]);
-//   }
-//   let order = 3;
-//   let index = 2;
-//   for (i = 0; i < portrait.length; i++) {
-//     if(i < order) {
-//     images.splice(index, 0, portrait[i]);
-//   } else {
-//       order += 3;
-//       index += 5;
-//       images.splice(index, 0, portrait[i]);
-//   }
-// }
-//   for (var i = 0; i < images.length; i++) {
-//     $div.appendChild(images[i])
-//     }
-// // clonedDiv();
-// }
-
-// function clonedDiv() {
-//   for (var i = 0; i < landscapeClone.length; i++) {
-//     imagesClone.push(landscapeClone[i]);
-//   }
-//   let y = 0;
-//   for (i = 0; i < portraitClone.length; i++) {
-
-//     imagesClone.splice(y, 0, portraitClone[i]);
-//     if (i + 4 === portraitClone.length) {
-//       y = imagesClone.length - 2;
-//     } else if (i % 2 === 0) {
-//       y+=2;
-//     }  else {
-//       y+=1
-//     }
-//   }
-//   for (var i = 0; i < imagesClone.length; i++) {
-//     $divL.appendChild(imagesClone[i]);
-//   }
-// }
 
 window.addEventListener('load', orderImages);
