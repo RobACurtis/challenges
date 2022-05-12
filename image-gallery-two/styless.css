@@ -1,7 +1,6 @@
 .container {
   width: 80%;
   margin: auto;
-  border: 1px solid black;
 }
 
 .row {
@@ -13,60 +12,74 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  transition: 1s linear;
 }
 .landscape {
   width: 75%;
   flex-grow: 1;
   margin: 1px 1px;
   object-fit: cover;
-  transition: .3s ease;
+  transition: .5s ease-out;
 }
 .portrait {
-  width: 23%;
+  width: 22%;
   flex-grow: 1;
   margin: 1px 1px;
   object-fit: cover;
-  transition: .3s ease;
+  transition: .5s ease-out;
 }
 
  @media screen and (min-width: 600px) {
   .landscape {
   width: 60%;
+  flex-grow: 2;
 }
 .portrait {
-  width: 13%;
+  width: 19%;
+  flex-grow: .2;
 }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 700px) {
 .landscape {
-  width: 40%;
+  width: 45%;
+  flex-grow: 8;
 }
 .portrait {
-  width: 15%%;
-  flex-grow: 0;
+  width: 20%;
+  flex-grow: .5;
 }
 }
 
 
  @media screen and (min-width: 980px) {
   .landscape {
-  width: 35%;
+  width: 36%;
 }
 .portrait {
-  width: 10%;
-  flex-grow: 0;
+  width: 13%;
 }
 }
 
 
 @media screen and (min-width: 1400px) {
  .landscape {
-   width: 25%;
+   width: 30%;
+   flex-grow: 3;
  }
   .portrait {
-    flex-grow: 0;
+    flex-grow: 1;
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1600px) {
+ .landscape {
+   width: 25%;
+   flex-grow: 3;
+ }
+  .portrait {
+    flex-grow: 1;
     width: 10%;
   }
 }
