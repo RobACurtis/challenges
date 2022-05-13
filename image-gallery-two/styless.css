@@ -15,12 +15,14 @@
   justify-content: flex-start;
   transition: 1s linear;
 }
+
 .landscape {
   width: 75%;
   flex-grow: 1;
   margin: 1px 1px;
   object-fit: cover;
   transition: .5s ease-out;
+  cursor: pointer;
 }
 .portrait {
   width: 22%;
@@ -28,8 +30,21 @@
   margin: 1px 1px;
   object-fit: cover;
   transition: .5s ease-out;
+  cursor: pointer;
 }
-
+.square {
+  width: 60%;
+  flex-grow: 1;
+  margin: 1px 1px;
+  object-fit: cover;
+  transition: .5s ease-out;
+  cursor: pointer;
+}
+.square:hover,
+.portrait:hover,
+.landscape:hover {
+  transform: scale(1.02);
+}
  @media screen and (min-width: 600px) {
   .landscape {
   width: 60%;
@@ -37,7 +52,10 @@
 }
 .portrait {
   width: 19%;
-  flex-grow: .2;
+}
+.square {
+  width: 39%;
+  flex-grow: 0;
 }
 }
 
@@ -48,17 +66,22 @@
 }
 .portrait {
   width: 20%;
-  flex-grow: .5;
+}
+.square {
+  width: 40%;
+  flex-grow: 2;
 }
 }
-
 
  @media screen and (min-width: 980px) {
   .landscape {
   width: 36%;
 }
 .portrait {
-  width: 13%;
+  width: 15%;
+}
+.square {
+  width: 30%;
 }
 }
 
@@ -69,9 +92,11 @@
    flex-grow: 3;
  }
   .portrait {
-    flex-grow: 1;
     width: 10%;
   }
+  .square {
+  width: 20%;
+}
 }
 @media screen and (min-width: 1600px) {
  .landscape {
@@ -79,7 +104,9 @@
    flex-grow: 3;
  }
   .portrait {
-    flex-grow: 1;
     width: 10%;
   }
+    .square {
+  width: 20%;
+}
 }
