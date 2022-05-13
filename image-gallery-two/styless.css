@@ -16,6 +16,10 @@
   transition: 1s linear;
 }
 
+.div {
+  width: 50%;
+}
+
 .landscape {
   width: 75%;
   flex-grow: 1;
@@ -57,11 +61,14 @@
   width: 39%;
   flex-grow: 0;
 }
+.div {
+  width: 43%;
+}
 }
 
 @media screen and (min-width: 700px) {
 .landscape {
-  width: 45%;
+  width: 48%;
   flex-grow: 8;
 }
 .portrait {
@@ -70,6 +77,9 @@
 .square {
   width: 40%;
   flex-grow: 2;
+}
+.div {
+  width: 35%;
 }
 }
 
@@ -82,6 +92,9 @@
 }
 .square {
   width: 30%;
+}
+.div {
+  width: 45%;
 }
 }
 
@@ -96,6 +109,10 @@
   }
   .square {
   width: 20%;
+}
+.div {
+  width: 30%;
+  flex-grow: 1;
 }
 }
 @media screen and (min-width: 1600px) {

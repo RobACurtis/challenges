@@ -21,19 +21,32 @@ function newImage() {
   for (var i =0; i < arr.length; i++) {
     const img = new Image();
     img.src = 'https://source.unsplash.com' + arr[i];
-img.onload = function () {
+     img.onload = function () {
       if (this.width > this.height) {
         img.className = 'landscape';
-        $div.appendChild(img);
+        $div.prepend(img);
       } else if (this.width < this.height) {
         img.className = 'portrait';
-        $div.appendChild(img)
+        $div.prepend(img)
       } else {
         img.className = 'square';
-        $div.appendChild(img)
+        $div.prepend(img);
       }
     }
+  }
+  for (let i = 0; i < 2; i++) {
+    const $div2 = document.createElement('div');
+    $div2.className = 'div';
+    $div.appendChild($div2);
   }
 }
 
 newImage();
+
+// function
+//   for (let i = 0; i < 2; i++) {
+//     const $div2 = document.createElement('div');
+//     $div2.className = 'div';
+//     $div.appendChild($div2);
+//   }
+// });
