@@ -20,6 +20,12 @@
   width: 50%;
 }
 
+.logo {
+  width: 150px;
+  position: relative;
+ left: 10%;
+}
+
 .landscape {
   width: 75%;
   flex-grow: 1;
@@ -63,7 +69,7 @@
 }
 .div {
   width: 43%;
-}
+}}
 }
 
 @media screen and (min-width: 700px) {
@@ -81,6 +87,7 @@
 .div {
   width: 35%;
 }
+
 }
 
  @media screen and (min-width: 980px) {
@@ -95,7 +102,7 @@
 }
 .div {
   width: 45%;
-}
+
 }
 
 
