@@ -26,6 +26,38 @@
  left: 10%;
 }
 
+.hidden {
+  display: none !important;
+}
+
+#show-form-button {
+  margin-right: 10%;
+}
+
+.search-form {
+ margin-right: 9%;
+ outline-color: black;
+}
+
+.search-form-hidden {
+ margin-right: 9%;
+ outline-color: black;
+ display: none !important;
+}
+
+.search-form > input,
+.search-form-hidden > input {
+  padding-left: 50px;
+  background-color: #F5F5F5;
+  width: 140px;
+}
+
+.search-form > button,
+.search-form-hidden > button {
+  position: absolute;
+  background-color: #F5F5F5;
+}
+
 .landscape {
   width: 75%;
   flex-grow: 1;
@@ -56,81 +88,91 @@
   transform: scale(1.02);
 }
  @media screen and (min-width: 600px) {
+  #show-form-button {
+  display: none;
+  }
+  .search-form-hidden {
+  display: flex!important;
+  }
+.search-form > input,
+.search-form-hidden > input {
+  width: 200px;
+}
   .landscape {
-  width: 60%;
-  flex-grow: 2;
-}
-.portrait {
-  width: 19%;
-}
-.square {
-  width: 39%;
-  flex-grow: 0;
-}
-.div {
-  width: 43%;
-}}
+    width: 60%;
+    flex-grow: 2;
+  }
+  .portrait {
+    width: 19%;
+  }
+  .square {
+    width: 39%;
+    flex-grow: 0;
+  }
+  .div {
+    width: 43%;
+  }
 }
 
 @media screen and (min-width: 700px) {
-.landscape {
-  width: 48%;
-  flex-grow: 8;
-}
-.portrait {
-  width: 20%;
-}
-.square {
-  width: 40%;
-  flex-grow: 2;
-}
-.div {
-  width: 35%;
-}
-
+  .landscape {
+    width: 48%;
+    flex-grow: 8;
+  }
+  .portrait {
+    width: 20%;
+  }
+  .square {
+    width: 40%;
+    flex-grow: 2;
+  }
+  .div {
+    width: 35%;
+  }
 }
 
  @media screen and (min-width: 980px) {
   .landscape {
   width: 36%;
-}
-.portrait {
+  }
+  .portrait {
   width: 15%;
-}
-.square {
+  }
+  .square {
   width: 30%;
-}
-.div {
+  }
+  .div {
   width: 45%;
-
+  }
 }
 
 
 @media screen and (min-width: 1400px) {
- .landscape {
-   width: 30%;
-   flex-grow: 3;
- }
-  .portrait {
-    width: 10%;
+  .landscape {
+    width: 30%;
+    flex-grow: 3;
   }
-  .square {
-  width: 20%;
-}
-.div {
-  width: 30%;
-  flex-grow: 1;
-}
-}
-@media screen and (min-width: 1600px) {
- .landscape {
-   width: 25%;
-   flex-grow: 3;
- }
-  .portrait {
-    width: 10%;
-  }
+    .portrait {
+      width: 10%;
+    }
     .square {
-  width: 20%;
+    width: 20%;
+  }
+  .div {
+    width: 30%;
+    flex-grow: 1;
+  }
 }
+
+@media screen and (min-width: 1600px) {
+  .landscape {
+    width: 25%;
+    flex-grow: 3;
+  }
+    .portrait {
+      width: 10%;
+  }
+      .square {
+    width: 20%;
+  }
 }
