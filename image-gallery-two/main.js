@@ -48,6 +48,7 @@ function newImage() {
     $div2.className = 'div';
     $div.appendChild($div2);
   }
+  document.querySelector('#gallery-container').className = 'container mt-5 pt-5';
 }
 
 const $homeImage = document.querySelector('.hero-image');
@@ -87,7 +88,19 @@ $logo.addEventListener('click', showHomePage);
 
 function showHomePage(e) {
   document.querySelector('#home-page').className = '';
+  const $profilePage = document.querySelector('#profile-page');
+  $profilePage.className = 'profile-page hidden';
   document.querySelector('#gallery-container').className = 'container mt-5 pt-5 hidden';
   document.querySelector('#gallery').innerHTML = '';
-  document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top navbar-opacity';
+  document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top opacity-75';
 }
+
+const $search = document.querySelector('input');
+$search.addEventListener('keydown', (e) => {
+  event.preventDefault();
+    const $profilePage = document.querySelector('#profile-page');
+    $profilePage.className = 'profile-page';
+    document.querySelector('#home-page').className = 'hidden';
+    document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top';
+    newImage();
+});
