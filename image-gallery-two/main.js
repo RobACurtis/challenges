@@ -16,6 +16,16 @@ const landscape = [];
 const portrait = [];
 const images = [];
 
+window.addEventListener('click', () => {
+  if (event.target.id === 'show-form-button' || event.target.className === 'fas fa-search') {
+    const $searchForm = document.querySelector('#search-form').className = "d-flex search-form";
+    document.querySelector('#show-form-button').className = 'hidden';
+    return;
+ } else if (event.target.id !== 'search-input') {
+    document.querySelector('#search-form').className = "d-flex search-form-hidden";
+    document.querySelector('#show-form-button').className = 'btn';
+  }
+});
 
 function newImage() {
   for (var i =0; i < arr.length; i++) {
@@ -42,11 +52,3 @@ function newImage() {
 }
 
 newImage();
-
-// function
-//   for (let i = 0; i < 2; i++) {
-//     const $div2 = document.createElement('div');
-//     $div2.className = 'div';
-//     $div.appendChild($div2);
-//   }
-// });
