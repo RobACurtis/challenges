@@ -20,7 +20,6 @@ window.addEventListener('click', () => {
   if (event.target.id === 'show-form-button' || event.target.className === 'fas fa-search') {
     const $searchForm = document.querySelector('#search-form').className = "d-flex search-form";
     document.querySelector('#show-form-button').className = 'hidden';
-    return;
  } else if (event.target.id !== 'search-input') {
     document.querySelector('#search-form').className = "d-flex search-form-hidden";
     document.querySelector('#show-form-button').className = 'btn';
@@ -51,4 +50,44 @@ function newImage() {
   }
 }
 
-newImage();
+const $homeImage = document.querySelector('.hero-image');
+
+let i = 3;
+const interval = setInterval(() => {
+  if (i === 4) {
+  for (let index = 0; index < 4; index++) {
+    $homeImage.children[index].className = 'img-homepage'
+  }
+  i = 3;
+  return;
+}
+    $homeImage.children[i].className = 'img-homepage opacity';
+  i--;
+  if (i === 0) {
+    $homeImage.children[i].className = 'img-homepage';
+    i = 4;
+  } else {
+  $homeImage.children[i].className = 'img-homepage';
+  }
+}, 4000);
+
+const $exploreButton = document.querySelector('#button');
+
+$exploreButton.addEventListener('click', showGallery);
+
+function showGallery(e) {
+  newImage();
+  document.querySelector('#home-page').className = 'hidden';
+  document.querySelector('#gallery-container').className = 'container mt-5 pt-5';
+  document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top';
+}
+
+const $logo = document.querySelector('.logo');
+$logo.addEventListener('click', showHomePage);
+
+function showHomePage(e) {
+  document.querySelector('#home-page').className = '';
+  document.querySelector('#gallery-container').className = 'container mt-5 pt-5 hidden';
+  document.querySelector('#gallery').innerHTML = '';
+  document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top navbar-opacity';
+}
