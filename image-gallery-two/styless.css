@@ -46,7 +46,9 @@
 .search-input {
   padding-left: 50px;
   background-color: #F5F5F5;
-  width: 140px;
+  width: 200px;
+  margin-right: 5px;
+  display: block;
 }
 
 

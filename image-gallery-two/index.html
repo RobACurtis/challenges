@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+  <nav id="nav" class="navbar navbar-dark bg-dark navbar-expand-md sticky-top" style="width: 100%;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="logo" src="images/logo (2).png" alt="surfer logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -33,15 +33,15 @@
       <div class="offcanvas offcanvas-start bg-dark" style="width: 50%;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <img class="logo" src="images/logo (2).png" alt="surfer logo">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" style=""></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-left: 20px;">
             <li class="nav-item center">
                 <li>
                   <hr class="divider" style="color: white;">
                 </li>
-              <a class="nav-link active" aria-current="page" href="#">Explore</a>
+              <a class="nav-link active text-right" aria-current="page" href="#">Explore</a>
                 <li>
                   <hr class="divider" style="color: white;">
                 </li>
@@ -49,11 +49,18 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Log In</a>
             </li>
+              <li>
+                <hr class="divider" style="color: white;">
+              </li>
+              <li class="nav-item">
+                <form id="search-form" class="d-flex search-form" style="margin: 0;" role="search">
+                  <input id="search-input" class="form-control me-2 search-input" type="search" placeholder="Search"
+                    aria-label="Search">
+                  <button class="btn" style="color: black; position: absolute;" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </li>
           </ul>
-          <form id="search-form" class="d-flex search-form" style="margin: 0;" role="search">
-            <input id="search-input" class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" style="color: black; position: absolute;" type="submit"><i class="fas fa-search"></i></button>
-          </form>
+
         </div>
       </div>
     </div>
