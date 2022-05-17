@@ -1,3 +1,6 @@
+#search-input {
+    transition: .2s ease;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -82,9 +85,8 @@
   transform: scale(1.02);
 }
  @media screen and (min-width: 600px) {
-.search-form > input,
-.search-form-hidden > input {
-  width: 200px;
+#search-input:focus {
+  width: 300px;
 }
   .landscape {
     width: 60%;
