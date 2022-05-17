@@ -43,24 +43,12 @@
  outline-color: black;
 }
 
-.search-form-hidden {
- margin-right: 9%;
- outline-color: black;
- display: none !important;
-}
-
-.search-form > input,
-.search-form-hidden > input {
+.search-input {
   padding-left: 50px;
   background-color: #F5F5F5;
   width: 140px;
 }
 
-.search-form > button,
-.search-form-hidden > button {
-  position: absolute;
-  background-color: #F5F5F5;
-}
 
 .landscape {
   width: 75%;
@@ -92,12 +80,6 @@
   transform: scale(1.02);
 }
  @media screen and (min-width: 600px) {
-  #show-form-button {
-  display: none;
-  }
-  .search-form-hidden {
-  display: flex!important;
-  }
 .search-form > input,
 .search-form-hidden > input {
   width: 200px;

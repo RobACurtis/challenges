@@ -16,16 +16,6 @@ const landscape = [];
 const portrait = [];
 const images = [];
 
-window.addEventListener('click', () => {
-  if (event.target.id === 'show-form-button' || event.target.className === 'fas fa-search') {
-    const $searchForm = document.querySelector('#search-form').className = "d-flex search-form";
-    document.querySelector('#show-form-button').className = 'hidden';
- } else if (event.target.id !== 'search-input') {
-    document.querySelector('#search-form').className = "d-flex search-form-hidden";
-    document.querySelector('#show-form-button').className = 'btn';
-  }
-});
-
 function newImage() {
   for (var i =0; i < arr.length; i++) {
     const img = new Image();
@@ -80,7 +70,6 @@ function showGallery(e) {
   newImage();
   document.querySelector('#home-page').className = 'hidden';
   document.querySelector('#gallery-container').className = 'container mt-5 pt-5';
-  document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top';
 }
 
 const $logo = document.querySelector('.logo');
@@ -92,15 +81,13 @@ function showHomePage(e) {
   $profilePage.className = 'profile-page hidden';
   document.querySelector('#gallery-container').className = 'container mt-5 pt-5 hidden';
   document.querySelector('#gallery').innerHTML = '';
-  document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top opacity-75';
 }
 
-const $search = document.querySelector('input');
-$search.addEventListener('keydown', (e) => {
+const $searchForm = document.querySelector('form');
+$searchForm.addEventListener('submit', (e) => {
   event.preventDefault();
     const $profilePage = document.querySelector('#profile-page');
     $profilePage.className = 'profile-page';
     document.querySelector('#home-page').className = 'hidden';
-    document.querySelector('nav').className = 'navbar navbar-expand-lg bg-dark py-3 fixed-top';
     newImage();
 });

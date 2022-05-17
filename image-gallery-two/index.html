@@ -23,59 +23,36 @@
 </head>
 
 <body>
-  <!-- <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top opacity-75 ">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
     <div class="container-fluid">
-      <img class="logo" src="images/logo (2).png" alt="surfer logo">
-      <button id="show-form-button" class="btn" style="color: white;" type="submit"><i
-          class="fas fa-search"></i></button>
-      <form id="search-form" class="d-flex search-form-hidden" role="search">
-        <button class="btn" style="color: grey;" type="submit"><i class="fas fa-search"></i></button>
-        <input id="search-input" class="form-control me-2" type="search" placeholder="People" aria-label="Search">
-      </form>
-    </div>
-  </nav> -->
-  <nav class="navbar bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="logo" src="images/logo (2).png" alt="surfer logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#"><img class="logo" src="images/logo (2).png" alt="surfer logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
       </button>
-        <form id="search-form" class="d-flex search-form-hidden" role="search">
-          <button class="btn" style="color: grey;" type="submit"><i class="fas fa-search"></i></button>
-          <input id="search-input" class="form-control me-2" type="search" placeholder="People" aria-label="Search">
-        </form>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-start bg-dark" style="width: 50%;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <img class="logo" src="images/logo (2).png" alt="surfer logo">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li class="nav-item center">
                 <li>
-                  <hr class="dropdown-divider">
+                  <hr class="divider" style="color: white;">
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link active" aria-current="page" href="#">Explore</a>
+                <li>
+                  <hr class="divider" style="color: white;">
+                </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Log In</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form id="search-form" class="d-flex search-form" style="margin: 0;" role="search">
+            <input id="search-input" class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" style="color: black; position: absolute;" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
       </div>
