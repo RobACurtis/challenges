@@ -1,4 +1,5 @@
 const $div = document.querySelector('#gallery');
+const $nav = document.querySelector('nav');
 const arr = ['/900x1600/?surfing',
   '/1600x900/?surfing', '/1600x900/?sports',
   '/900x1600/?exercise', '/1000x1000/?weights','/1600x900/?happy',
@@ -70,6 +71,7 @@ function showGallery(e) {
   newImage();
   document.querySelector('#home-page').className = 'hidden';
   document.querySelector('#gallery-container').className = 'container mt-5 pt-5';
+  $nav.className = 'navbar navbar-dark bg-dark navbar-expand-md fixed-top'
 }
 
 const $logo = document.querySelector('.logo');
@@ -81,6 +83,7 @@ function showHomePage(e) {
   $profilePage.className = 'profile-page hidden';
   document.querySelector('#gallery-container').className = 'container mt-5 pt-5 hidden';
   document.querySelector('#gallery').innerHTML = '';
+  $nav.className = 'navbar navbar-dark bg-dark navbar-expand-md fixed-top opacity-75'
 }
 
 const $searchForm = document.querySelector('form');
@@ -89,5 +92,7 @@ $searchForm.addEventListener('submit', (e) => {
     const $profilePage = document.querySelector('#profile-page');
     $profilePage.className = 'profile-page';
     document.querySelector('#home-page').className = 'hidden';
+  $nav.className = 'navbar navbar-dark bg-dark navbar-expand-md fixed-top'
+  $searchForm.reset();
     newImage();
 });
