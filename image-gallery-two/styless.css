@@ -1,13 +1,31 @@
+#search-input {
+    transition: .2s ease;
+}
+
 .container {
   width: 80%;
   margin: auto;
 }
 
+.container-img {
+   position: fixed;
+  width: 80%;
+  height: 100vh;
+  left: 10%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
+.image-view {
+  width: 100%;
+}
 .column{
   width: 100%;
   display: flex;
@@ -16,6 +34,14 @@
   transition: 1s linear;
 }
 
+div.modal-img {
+  background-image: linear-gradient(rgba(19, 19, 19, 0.575), rgba(0, 0, 0, 0.548));
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  color: black;
+  z-index: 0;
+}
 .div {
   width: 50%;
 }
@@ -43,24 +69,20 @@
  outline-color: black;
 }
 
-.search-form-hidden {
- margin-right: 9%;
- outline-color: black;
- display: none !important;
+.full-size {
+  width: 700px;
+  position: absolute;
+
 }
 
-.search-form > input,
-.search-form-hidden > input {
+.search-input {
   padding-left: 50px;
   background-color: #F5F5F5;
-  width: 140px;
+  width: 200px;
+  margin-right: 5px;
+  display: block;
 }
 
-.search-form > button,
-.search-form-hidden > button {
-  position: absolute;
-  background-color: #F5F5F5;
-}
 
 .landscape {
   width: 75%;
@@ -92,15 +114,8 @@
   transform: scale(1.02);
 }
  @media screen and (min-width: 600px) {
-  #show-form-button {
-  display: none;
-  }
-  .search-form-hidden {
-  display: flex!important;
-  }
-.search-form > input,
-.search-form-hidden > input {
-  width: 200px;
+#search-input:focus {
+  width: 300px;
 }
   .landscape {
     width: 60%;
@@ -119,6 +134,9 @@
 }
 
 @media screen and (min-width: 700px) {
+  li {
+  margin: 0 0 0 20px;
+}
   .landscape {
     width: 48%;
     flex-grow: 8;
