@@ -21,6 +21,7 @@ function newImage() {
   for (var i =0; i < arr.length; i++) {
     const img = new Image();
     img.src = 'https://source.unsplash.com' + arr[i];
+    img.addEventListener('click', showImage);
      img.onload = function () {
       if (this.width > this.height) {
         img.className = 'landscape';
@@ -96,3 +97,15 @@ $searchForm.addEventListener('submit', (e) => {
   $searchForm.reset();
     newImage();
 });
+
+function showImage(e) {
+  const div = document.querySelector('#img-modal');
+  const $div = document.querySelector('#img-modal-unhide');
+  $div.className = '';
+  console.log(div);
+  const img = new Image();
+  img.setAttribute('src', e.target.src);
+  img.className = 'image-view';
+  console.log(img);
+  div.appendChild(img);
+}

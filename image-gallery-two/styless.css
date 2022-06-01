@@ -7,11 +7,25 @@
   margin: auto;
 }
 
+.container-img {
+   position: fixed;
+  width: 80%;
+  height: 100vh;
+  left: 10%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
+.image-view {
+  width: 100%;
+}
 .column{
   width: 100%;
   display: flex;
@@ -20,6 +34,14 @@
   transition: 1s linear;
 }
 
+div.modal-img {
+  background-image: linear-gradient(rgba(19, 19, 19, 0.575), rgba(0, 0, 0, 0.548));
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  color: black;
+  z-index: 0;
+}
 .div {
   width: 50%;
 }
@@ -45,6 +67,12 @@
 .search-form {
  margin-right: 9%;
  outline-color: black;
+}
+
+.full-size {
+  width: 700px;
+  position: absolute;
+
 }
 
 .search-input {
