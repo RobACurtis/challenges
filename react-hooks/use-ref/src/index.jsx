@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom/client';
-import { FaStar } from 'react-icons/fa';
 
 
 
