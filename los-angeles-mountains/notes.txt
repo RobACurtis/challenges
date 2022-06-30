@@ -1,0 +1,20 @@
+Hello! I have attached some questions about the rest of the assessment.
+
+
+I noticed in the directions I was told to include an accordion for the links.
+I have worked with accordions in the past, I know how to code them, however one of my complications
+is I am unsure if each section should have its own accordion? There are two navbars total one for each page.
+Also, the PSD was not designed for mobile view. Meaning, there are some complications with the text and images on smaller screen sizes.
+The background images are not dark enough and the text is hard to read.
+
+As far as the image carousel, I was also unsure what the goal of it was. Should the user click an image to rotate it?
+Does the image expand or replace the background image? Should there be more images hidden from view that appear when the user clicks an image?
+
+I stopped working on this assessment when I ran into these questions, I could of course continue to code it how I think it should be.
+But in my experience it is always better to ask clarifying questions, than make something
+that was unnecessary and complicate the process or frustrate the team. I like to give exactly what was requested of me.
+
+Also the allotted time was 60 minutes for this part of the assessment, and I spent a few hours extra working on this and I wasn't totally sure when I should stop.
+
+Thanks!
+Rob
