@@ -1,6 +1,5 @@
 import React, { useReducer } from 'react';
 import ReactDOM from 'react-dom/client';
-import { FaStar } from 'react-icons/fa';
 
 
 const initialState = {
