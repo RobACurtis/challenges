@@ -4,7 +4,7 @@ const $mountain2 = document.querySelector('#mountain-two');
 const $mountainImage1 = document.querySelector('#image-one');
 const $mountainImage2 = document.querySelector('#image-two');
 
-$mountain1.addEventListener('click', (event) => {
+$mountain1.addEventListener('click', () => {
   $mountain1.className = 'mountain-tab-active';
   $mountain2.className = 'mountain-tab';
   $mountainImage1.className = '';

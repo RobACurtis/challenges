@@ -42,7 +42,6 @@ a:active {
   font-family: Oswald, sans-serif;
 }
 
-
 nav.clear {
   background-color: rgba(0, 0, 0, 0);
   padding: 0 20%;
@@ -61,7 +60,7 @@ nav.white {
   color: black;
 }
 
-.row {
+.row-history {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -90,6 +89,7 @@ nav.white {
   flex-basis: 100%;
   text-align: center;
 }
+
 .carousel {
   margin: 1em .3em;
 }
@@ -110,7 +110,6 @@ nav.white {
   margin-top: .5em;
   padding: .5em 0;
 }
-
 
 .climb-text {
   width: 100%;
@@ -208,6 +207,10 @@ position: relative;
 
 .mountain-tab-active:hover {
   cursor: pointer;
+}
+
+.mountain-tab > span {
+  z-index: 0;
 }
 
 .schedule-box {
