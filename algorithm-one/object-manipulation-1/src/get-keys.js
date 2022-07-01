@@ -1,6 +1,6 @@
 /* exported getKeys */
 function getKeys(object) {
-  let newArr = [];
+  const newArr = [];
     for (key in object) {
       newArr.push(key);
     }
