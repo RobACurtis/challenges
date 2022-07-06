@@ -6,22 +6,21 @@ export default function AppDrawer() {
   const [menu, showMenu] = useState(false);
 
  const toggleMenu = e => {
-    if (e.target.id === 'menu-icon') {
+    if (e.target.id === 'bars') {
       showMenu(true);
-    } else {
-      showMenu(prevMenu => (!prevMenu));
+    } else if (menu) {
+      showMenu(false);
     }
   }
 
 return (
   <div onClick={toggleMenu}>
-    <img src="../react.png" alt="react" />
-    <div className={`icon`}>
-      <i> <FaBars id="menu-icon" onClick={toggleMenu} /> </i>
+    <div id="menu-icon" onClick={toggleMenu} >
+      <FaBars id='bars' className={(menu) ? 'opacity' : ''}/>
     </div>
-    <div id="drawer" className={ (menu) ? '' : 'hidden'}>
+    <div id="drawer" className={ (menu) ? '' : 'opacity'}>
       <div className="background-image"></div>
-      <div className='menu'>
+      <div className={`menu ${(menu) ? 'is-on' : ''}`}>
         <ul>
           <h3>Menu</h3>
           <li>About</li>
