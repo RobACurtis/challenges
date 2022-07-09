@@ -1,34 +1,43 @@
 from fastapi import FastAPI, Path
+import psycopg2
 
+
+
+conn = psycopg2.connect("dbname=todos user=dev")
+cur = conn.cursor()
 app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"Hello": "World"}
+    cur.execute('SELECT * FROM todo;')
+    rows = cur.fetchall()
+    todos = []
+    index = 0
+    for r in rows:
+      todos.append({
+        "id":r[0],
+        "todo": r[1],
+        "completed": r[2]
+        })
+      index = index + 1
+
+    return todos
+
+@app.post("/add-item/{todo}")
+def about(todo: str):
+    print(todo)
+    SQL = 'insert into todo ("Todo") values (%s);'
+    data = (todo,)
+    cur.execute(SQL, data)
+    conn.commit()
+
+@app.delete("/delete/{item_id}")
+def get_item(item_id: int ):
+    SQL = 'delete from todo where "id" = %s;'
+    data = (item_id,)
+    cur.execute(SQL, data)
+    conn.commit()
 
 
-@app.get("/about")
-def about():
-    return {"item_id": "About"}
-
-inventory = {
-        0: {
-          "name": "Milk",
-          "price": 3.99,
-          "brand": "Kroger"
-        },
-        1: {
-          "name": "Steak",
-          "price": 11.99,
-          "brand": "Kroger Farms"
-        },
-        2: {
-          "name": "Fruit",
-          "price": 2.00,
-          "brand": "Ralph's"
-        }
-}
-
-@app.get("/get-item/{item_id}")
-def get_item(item_id: int = Path(None, description="The ID of the item you'd like to view")):
-  return inventory[item_id]
+# cur.close()
+# conn.close()
