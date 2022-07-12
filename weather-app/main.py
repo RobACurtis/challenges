@@ -7,7 +7,7 @@ print(weather['daily'][0]['weather'])
 
 conn = psycopg2.connect("dbname=weather user=dev")
 cur = conn.cursor()
-app = FastAPI()
+
 
 
 SQL = 'insert into location ("timezone", "lattitude", "longitude") values (%s, %s ,%s);'
@@ -18,6 +18,37 @@ conn.commit()
 
 cur.close()
 conn.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # @app.post("/add-item/{todo}")
 # def about(todo: str):
