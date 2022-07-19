@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IAPDFirmStateReport GenOn="2022-07-13">
+  <Firms>
+    <Firm>
+      <Info FirmCrdNb="146099" BusNm="PRINCIPA FINANCIAL ADVISORS" LegalNm="CHUNG, BUCK CHWEE" UmbrRgstn="N"/>
+      <MainAddr Strt1="15111 WHITTIER BLVD" Strt2="STE 360" City="WHITTIER" State="CA" Cntry="United States" PostlCd="90603" PhNb="562-945-7888" FaxNb="562-968-1885"/>
+      <MailingAddr/>
+      <StateRgstn>
+        <Rgltrs>
+          <Rgltr Cd="CA" St="APPROVED" Dt="2008-03-13"/>
+        </Rgltrs>
+      </StateRgstn>
+      <ERA>
+        <Rgltrs/>
+      </ERA>
+      <Filing Dt="2021-10-04" FormVrsn="03/2020"/>
+      <FormInfo>
+        <Part1A>
+          <Item1 Q1F5="0" Q1I="N" Q1M="N" Q1N="N" Q1O="N">
+            <WebAddrs/>
+          </Item1>
+          <Item3A OrgFormNm="Sole Proprietorship"/>
+          <Item3B Q3B="DECEMBER"/>
+          <Item3C StateCD="CA" CntryNm="United States"/>
+          <Item5A TtlEmp="1"/>
+          <Item5B Q5B1="1" Q5B2="1" Q5B3="1" Q5B4="1" Q5B5="1" Q5B6="0"/>
+          <Item5C Q5C1="0" Q5C2="0"/>
+          <Item5D/>
+          <Item5E Q5E1="Y" Q5E2="N" Q5E3="N" Q5E4="N" Q5E5="N" Q5E6="N" Q5E7="N"/>
+          <Item5F Q5F1="N"/>
+          <Item5G Q5G1="Y" Q5G2="Y" Q5G3="N" Q5G4="N" Q5G5="N" Q5G6="N" Q5G7="N" Q5G8="N" Q5G9="N" Q5G10="N" Q5G11="N" Q5G12="N"/>
+          <Item5H Q5H="1-10"/>
+          <Item5I Q5I1="N"/>
+          <Item5J Q5J1="Y" Q5J2="N"/>
+          <Item5K Q5K1="N" Q5K2="N" Q5K3="N" Q5K4="N"/>
+          <Item5L/>
+          <Item6A Q6A1="N" Q6A2="N" Q6A3="N" Q6A4="N" Q6A5="N" Q6A6="Y" Q6A7="N" Q6A8="N" Q6A9="N" Q6A10="N" Q6A11="N" Q6A12="Y" Q6A13="N" Q6A14="N"/>
+          <Item6B Q6B1="N" Q6B3="Y"/>
+          <Item7A Q7A1="N" Q7A2="N" Q7A3="N" Q7A4="N" Q7A5="N" Q7A6="N" Q7A7="N" Q7A8="N" Q7A9="N" Q7A10="Y" Q7A11="N" Q7A12="Y" Q7A13="N" Q7A14="N" Q7A15="N" Q7A16="N"/>
+          <Item7B Q7B="N"/>
+          <Item8A Q8A1="N" Q8A2="N" Q8A3="N"/>
+          <Item8B Q8B1="N" Q8B2="N" Q8B3="N"/>
+          <Item8C Q8C1="N" Q8C2="N" Q8C3="N" Q8C4="N"/>
+          <Item8D/>
+          <Item8E Q8E="N"/>
+          <Item8F/>
+          <Item8G Q8G1="N"/>
+          <Item8H Q8H1="N" Q8H2="N"/>
+          <Item8I Q8I="N"/>
+          <Item9A Q9A1A="N" Q9A1B="N"/>
+          <Item9B Q9B1A="N" Q9B1B="N"/>
+          <Item9C Q9C1="N" Q9C2="N" Q9C3="N" Q9C4="N"/>
+          <Item9D Q9D1="N" Q9D2="N"/>
+          <Item9E/>
+          <Item9F/>
+          <Item10A Q10A="N"/>
+          <Item11 Q11="N"/>
+          <Item11A Q11A1="N" Q11A2="N"/>
+          <Item11B Q11B1="N" Q11B2="N"/>
+          <Item11C Q11C1="N" Q11C2="N" Q11C3="N" Q11C4="N" Q11C5="N"/>
+          <Item11D Q11D1="N" Q11D2="N" Q11D3="N" Q11D4="N" Q11D5="N"/>
+          <Item11E Q11E1="N" Q11E2="N" Q11E3="N" Q11E4="N"/>
+          <Item11F Q11F="N"/>
+          <Item11G Q11G="N"/>
+          <Item11H Q11H1A="N" Q11H1B="N" Q11H1C="N" Q11H2="N"/>
+        </Part1A>
+        <Part1B>
+          <Item2 Q1B2B4="Y"/>
+          <DsclrQstns Q1B2C="N" Q1B2D="N" Q1B2E1="N" Q1B2E2="N" Q1B2E3="N" Q1B2E4="N" Q1B2E5="N" Q1B2F1="N" Q1B2F2="N" Q1B2F3="N" Q1B2F4="N" Q1B2F5="N"/>
+          <ItemG/>
+          <ItemH Q1B2HScrtsNvsmt="$100,001 to $500,000" Q1B2HNScrtsNvsmt="$100,001 to $500,000"/>
+          <ItemI Q1B2I1="N" Q1B2I2Ai="N" Q1B2I2AiiAtrny="N" Q1B2I2AiiCpa="N" Q1B2I2AiiOth="N" Q1B2I2B="N" Q1B2I3="N"/>
+          <ItemJ Q1BJ1A="Y" Q1BJ1B="Y" Q1BJ2A="N"/>
+          <ItemK/>
+        </Part1B>
+      </FormInfo>
+    </Firm>
+    <IAPDFirmStateReport  />
