@@ -39,7 +39,6 @@ function getInfo(x) {
 }
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
   let file = './xmldata.xml';
   fetch(file)
