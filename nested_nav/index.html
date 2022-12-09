@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://d27ni14mn02a4g.cloudfront.net/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header id="navbar">
+    <div id="mobile-nav-menu" class="mobile-nav-hidden d-md-none">
+      <div id="social-media" class="row py-3 align-items-end">
+        <div class="col-10">
+          <span class="px-3">
+            <a class="fs-5 disable-link-style" target="_blank" rel="noreferrer" href="https://www.facebook.com/"
+              title="facebook">
+              <i class="fa-brands fa-facebook social"></i>
+            </a>
+          </span>
+          <span class="px-3">
+            <a class="fs-5 disable-link-style" target="_blank" rel="noreferrer" href="https://www.instagram.com"
+              title="Instagram">
+              <i class="fa-brands fa-instagram social"></i>
+            </a>
+          </span>
+          <span class="px-3">
+            <a class="fs-5 disable-link-style" target="_blank" rel="noreferrer" href="https://www.pinterest.com/"
+              title="pinterest">
+              <i class="fa-brands fa-pinterest social"></i>
+            </a>
+          </span>
+          <span class="px-3">
+            <a class="fs-5 disable-link-style" target="_blank" rel="noreferrer" href="https://www.youtube.com/"
+              title="Youtube">
+              <i class="fa-brands fa-youtube social"></i>
+            </a>
+          </span>
+        </div>
+        <div id="close-mobile-menu" class="col-2 text-end mt-4">
+          <i class="fs-3 fa-solid fa-x pointer"></i>
+        </div>
+      </div>
+      <ul id="items" class="px-1">
+        <li id="categories" class="row mt-5 ms-2">
+          <div class="col-10">
+            <h2 class="fw-bold">
+              Categories
+            </h2>
+          </div>
+          <div id="categories-dropdown" class="col-2 text-end" data-show="false">
+            <i class="fs-3 fa-solid fa-caret-right pointer"></i>
+          </div>
+          <ul id="categories-submenu" class="hide-submenu col-12 p-0 p-0 col-12"></ul>
+        </li>
+        <li id="groups" class="row mt-3 ms-2">
+          <div class="col-10">
+            <h2 class="fw-bold">
+              <a href="" class="py-2 disable-link-style">
+                Groups
+              </a>
+            </h2>
+          </div>
+          <div id="groups-dropdown" class="col-2 text-end" data-show="false">
+            <i class=" fs-3 fa-solid fa-caret-right pointer"></i>
+          </div>
+          <ul id="groups-submenu" class="hide-submenu col-12 p-0">
+          </ul>
+        </li>
+        <li id="watch" class="row mt-3 ms-2">
+          <div class="col-10">
+            <h2 class="fw-bold">
+              <a href="" class="py-2 disable-link-style">
+                Watch
+              </a>
+            </h2>
+          </div>
+          <div id="watch-dropdown" class="col-2 text-end" data-show="false">
+            <i class="fs-3 fa-solid fa-caret-right pointer"></i>
+          </div>
+          <ul id="watch-submenu" class="hide-submenu col-12 p-0">
+          </ul>
+        </li>
+        <li id="listen" class="row mt-3 ms-2">
+          <div class="col-10">
+            <h2 class="fw-bold">
+              <a href="" class="py-2 disable-link-style">
+                Listen
+              </a>
+            </h2>
+          </div>
+          <div id="listen-dropdown" class="col-2 text-end" data-show="false">
+            <i class=" fs-3 fa-solid fa-caret-right pointer"></i>
+          </div>
+          <ul id="listen-submenu" class="hide-submenu col-12 p-0">
+          </ul>
+        </li>
+        <li id="stream" class="row mt-3 ms-2">
+          <div class="col-10">
+            <h2 class="fw-bold">
+              <a href="" class="py-2 disable-link-style">
+                Sign Up
+              </a>
+            </h2>
+          </div>
+        </li>
+        <li id="fall-2022" class="row mt-3 ms-2">
+          <div class="col-10">
+            <h2 class="fw-bold">
+              <a href="" class="py-2 disable-link-style">
+                About
+              </a>
+            </h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <div id="mobile-nav" class="container-lg">
+        <div class="d-md-none">
+          <div class="col-3 p-2 text-light">
+            <i id="open-mobile-menu" class="fs-1 pointer fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div id="desktop-nav" class="row d-none d-md-block">
+          <div class="col-12">
+            <ul class="desktop-nav-list m-0 p-2">
+              <li id="desktop-categories"><i class="fs-3 fa-solid fa-bars"></i>
+                <ul id="parent-categories-desktop" class="d-none">
+                </ul>
+              </li>
+              <li id="desktop-groups">
+                <a class="disable-link-style" href="">GROUPS
+                </a><i class="ps-2 fa-solid fa-caret-down"></i>
+                <ul id="parent-groups-desktop" class="d-none">
+                </ul>
+              </li>
+              <li id="desktop-watch"><a class="disable-link-style" href="">WATCH </a><i
+                  class="ps-2 fa-solid fa-caret-down"></i>
+                <ul id="parent-watch-desktop" class="d-none">
+                </ul>
+              </li>
+              <li id="desktop-listen"><a class="disable-link-style" href="">LISTEN </a><i
+                  class="ps-2 fa-solid fa-caret-down"></i>
+                <ul id="parent-listen-desktop" class="d-none">
+                </ul>
+              </li>
+              <li><i class="fa-solid fa-tv pe-2"></i><a class="disable-link-style" href="">SIGN UP </a>
+              </li>
+              <li><a class="disable-link-style" href="">ABOUT </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="main.js"></script>
+</body>
+
+</html>
